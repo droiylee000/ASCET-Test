@@ -1,0 +1,50 @@
+classType components.Component
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_3
+		}
+	}
+	simpleIdentifier v at (611, 275) {
+		label at (0, -1)
+		inPin connection_4
+		outPin sequenceCall {
+			inPin connection_3
+		}
+	}
+	simpleIdentifier c at (321, 295) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (471, 266) {
+		inPin connection_1 {
+			bendpoints (50, 0), (50, 40)
+		}
+		inPin connection_2 {
+			bendpoints (50, 0), (50, -10)
+		}
+		outPin {
+			connection_4
+		}
+	}
+	simpleIdentifier c_2 at (321, 225) {
+		label at (0, -1)
+		outPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier c_3 at (531, 415) {
+		label at (0, -1)
+		outPin sequenceCall {
+			inPin
+		}
+	}
+}
